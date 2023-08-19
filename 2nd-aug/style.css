@@ -73,7 +73,7 @@ h2{
     margin-left: 2vw;
     margin-top: 2vw;
 }
-a{
+tr a{
     margin-left: 2vw;
     margin-top: 2vw;
 }
@@ -140,12 +140,12 @@ li a{
 .butto {
     background-color: black;
     width: 78vw;
-    margin-right: 2vw;
     color: white;
     align-items: center;
     text-align: center;
     justify-content: center;
     border: none;
+    margin-top: 2vw;
     padding: 10px 20px;
     cursor: pointer;
     text-decoration: none;
