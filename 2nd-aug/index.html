@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tables</title>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <div class="one">
+              <li>Library System</li>
+            </div>
+            <div class="two">
+              <li><a href="#books">Books</a></li>
+              <li><a href="#register">Register</a></li>
+              <li>Contact Us</li>
+              <li>Logout</li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class='page1' id="books">
+        <div class="books">
+          <h2>Books</h2>
+          <table>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                           <a href="/">Book Title 1</Title></a>
+                        </tr>
+                        <tr>  
+                           <td>Publication Date: 2000</td> 
+                        </tr>
+                        <tr>   
+                           <td>Page Count: 250</td>
+                        </tr>
+                        <tr>
+                           <td>ISBN: 1234567890123</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Author Name 1</td>
+                <td>Genre 1</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                           <a href="/">Book Title 2</Title></a>
+                        </tr>
+                        <tr>  
+                           <td>Publication Date: 2005</td> 
+                        </tr>
+                        <tr>   
+                           <td>Page Count: 300</td>
+                        </tr>
+                        <tr>
+                           <td>ISBN: 123-4567890456</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Author Name 2</td>
+                <td>Genre 2</td>
+                <td>Not Available</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <table class="nested-table">
+                        <tr>
+                           <a href="/">Book Title 3</Title></a>
+                        </tr>
+                        <tr>  
+                           <td>Publication Date: 2010</td> 
+                        </tr>
+                        <tr>   
+                           <td>Page Count: 350</td>
+                        </tr>
+                        <tr>
+                           <td>ISBN: 123-4567890789</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Author Name 3</td>
+                <td>Genre 4</td>
+                <td>Available</td>
+            </tr>
+          </table>
+          
+        </div>
+    </div>
+    <div class="page2" id="register">
+        <div class="register">
+          <h2>Register</h2>
+          <form action="#" method="post">
+             <div class="form-group">
+                <label for="first-name">
+                    First Name:
+                </label>
+                <input type="text" id="first-name" name="first-name" required>
+             </div>
+             <div class="form-group">
+                <label for="last-name">
+                    Last Name:
+                </label>
+                <input type="text" id="last-name" name="last-name" required>
+             </div>
+             <div class="form-group">
+                <label for="date-of-birth">
+                    Date Of Birth:
+                </label>
+                <input type="text" id="date-of-birth" name="date-of-birth" placeholder="dd/mm/yyyy" pattern="[0-9/]*">
+             </div>
+             <div class="form-group">
+                <label for="age">
+                    Age:
+                </label>
+                <input type="number" id="age" name="age" min="5" max="100" required>
+             </div>
+             <div class="form-group">
+                <label for="email">
+                    Email:
+                </label>
+                <input type="email" id="email" name="email" required>
+             </div>
+             <div class="form-group">
+                <label for="password">
+                    Password:
+                </label>
+                <input type="password" id="password" name="password" required>
+             </div>
+             <div class="form-group">
+                <label for="confirm-password">
+                    Confirm Password:
+                </label>
+                <input type="password" id="confirm-password" name="confirm-password">
+             </div>
+             <div class="form-group">
+              <a href="/">
+                <div class="butto">Register
+               </div> 
+              </a>
+             </div>
+          </form>
+        </div>
+    </div>
+</body>
+</html>
